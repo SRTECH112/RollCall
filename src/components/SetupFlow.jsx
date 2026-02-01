@@ -151,7 +151,8 @@ const SetupFlow = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-dark-950 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-dark-900 via-dark-950 to-dark-950 font-sans">
-      <Card className="w-full max-w-md border-dark-800 bg-dark-900/50 backdrop-blur-xl">
+      <div className="w-full max-w-md">
+      <Card className="w-full border-dark-800 bg-dark-900/50 backdrop-blur-xl">
         <CardHeader className="pb-6">
           <CardTitle className="text-center text-2xl font-bold text-white mb-4">
             Welcome to RollCall+ 🎯
@@ -414,6 +415,7 @@ const SetupFlow = () => {
             Sign in here
           </a>
         </p>
+      </div>
       </div>
     </div>
   );
