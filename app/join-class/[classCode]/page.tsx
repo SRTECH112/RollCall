@@ -45,11 +45,11 @@ export default function JoinClass() {
 
       setClassData({
         id: data.id,
-        classCode: data.classCode,
-        name: data.name || data.classCode,
-        checkInStartTime: data.checkInStartTime,
-        gracePeriodMinutes: data.gracePeriodMinutes,
-        active: data.active
+        classCode: (data as any).classCode,
+        name: (data as any).name || (data as any).classCode,
+        checkInStartTime: (data as any).checkInStartTime,
+        gracePeriodMinutes: (data as any).gracePeriodMinutes,
+        active: (data as any).active
       });
     } catch (err: any) {
       setError(err.message || 'Failed to load class');
