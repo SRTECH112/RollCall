@@ -403,6 +403,18 @@ const SetupFlow = () => {
           )}
         </CardContent>
       </Card>
+
+      <div className="mt-6 text-center">
+        <p className="text-dark-text-secondary text-sm">
+          Already have an account?{' '}
+          <a 
+            href="/login" 
+            className="text-primary-500 hover:text-primary-400 font-medium transition-colors"
+          >
+            Sign in here
+          </a>
+        </p>
+      </div>
     </div>
   );
 };
